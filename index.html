@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD system</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    
+</head>
+<body>
+ 
+     <div class="container w-50 shadow mt-5">
+        <h1>CRUD System</h1>
+        <label>Product name:</label>
+        <input type="text" name="productName" id="productName" class="form-control">
+        <label>ProductCategory:</label>
+        <input type="text" name="ProductCategory" id="productCategory" class="form-control">
+        <label>ProductPrice:</label>
+        <input type="number" name="ProductPrice" id="ProductPrice" class="form-control">
+        <label>ProductDescription:</label>
+        <textarea type="number" name="productDescription" id="productDescription" class="form-control"></textarea>
+        <div class="btns">
+        <div class="display: inline-block;" id="btnsContainer">
+        <button id="update" class="btn btn-outline-info my-3" onclick="addProduct()">Add Product</button>
+        </div>
+        <button class="btn btn-outline-info my-3" onclick="clearProduct()">Clear</button>
+    </div>
+    </div>
+    <input type="search" name="search" id="search" placeholder="search....."  class="container w-25 form-control my-5">
+    <table class="table container">
+        <thead>
+            <tr>
+                <th>Index:</th>
+                <th>Name:</th>
+                <th>category:</th>
+                <th>price:</th>
+                <th>description:</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    
+
+
+
+     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/style.js"></script>
+</body>
+</html>

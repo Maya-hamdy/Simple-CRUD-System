@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.highlight{
+    background-color: lightblue;
+    color: white;
+}
+.btns{
+    display:flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+
+
